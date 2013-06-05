@@ -1,0 +1,2 @@
+djangotastypie-demo
+===================
