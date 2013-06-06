@@ -3,7 +3,7 @@ from django.db import models
 
 class Company(models.Model):
     name = models.CharField(max_length=200, primary_key=True)
-    created = models.DateField()
+    created = models.DateField(auto_now_add=True)
 
 
 class Stock(models.Model):
