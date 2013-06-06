@@ -1,0 +1,133 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+        <title>Cómo crear un "REST-style API" con Django y Tastypie</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <script type="text/javascript">
+        (function(H) {
+                H.className = H.className.replace(/\bno-js\b/, 'js')
+        })(document.documentElement)
+        </script>
+        <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+        <link href="{% static 'css/screen.css' %}" type="text/css" rel="stylesheet" media="Screen,projection" />
+</head>
+<body>
+        <div id="header">
+                <div class="container">
+                        <h1>Cómo crear un "REST-style API" con Django y Tastypie</h1>
+                </div>
+        </div>
+
+        <div id="content">
+                <div id="slides">
+                        <div class="slide" align="center">
+                                <h2>Cómo crear un "REST-style API"<br/>Django / Tastypie</h2>
+                                <h2>Henry Canastero | <a href="http://twitter.com/tufla">@tufla</a></h2>
+                        </div>
+                        <div class="slide">
+                                <h2>About me...</h2>
+                                <ul>
+                                        <li>CTO para SoloContrata.me</li>
+                                        <li>Head of Engineering en VoiceBunny / Voice123</li>
+                                        <li>Cofundador BogoDev</li>
+                                        <li>...</li>
+                                        <li>Ing. de Sistemas Universidad Nacional de Colombia</li>
+                                </ul>
+                        </div>
+                        <div class="slide">
+                                <h2>API?</h2>
+                                <p>(Application Programming Interface)</p>
+                                <p><small>"Conjunto de funciones y procedimientos (o métodos, en la programación orientada a objetos) que ofrece cierta biblioteca para ser utilizado por otro software como una capa de abstracción"</small></p>
+                                <div align="center">Interfaz controlada de comunicación entre programas</div>
+                        </div>
+                        <div class="slide">
+                                <h2>SOAP</h2>
+                                <p>(Simple Object Access Protocol)</p>
+                                <ul>
+                                        <li>XML</li>
+                                        <li>WSDL</li>
+                                        <li>XSD</li>
+                                        <li>Solo métodos GET y POST</li>
+                                        <li>...</li>
+                                </ul>
+                        </div>
+                        <div class="slide">
+                                <h2>REST</h2>
+                                <p>(Representational State Transfer)</p>
+                                <ul>
+                                        <li>Protocolo cliente/servidor sin estado</li>
+                                        <li>Operaciones bien definidas</li>
+                                        <li>CRUD:  POST, GET, PUT, y DELETE...(PATCH)</li>
+                                        <li>Sintaxis universal para identificar los recursos (URI)</li>
+                                        <li>JSON sobre XML</li>
+                                </ul>
+                        </div>
+                        <div class="slide">
+                                <h2>REST</h2>
+                                <ul>
+                                        <li>POST: Crear nuevo recurso</li>
+                                        <li>DELETE: Eliminar recurso</li>
+                                        <li>PUT: Actualizar recurso</li>
+                                        <li>PATCH: Usado para actualización parcial (No todos los browsers lo soportan)</li>
+                                        <li>GET: Ver un recurso</li>
+                                </ul>
+                        </div>
+                        <div class="slide">
+                                <h2>REST</h2>
+                                <p>Listas vs Detalle</p>
+                                <ul>
+                                        <li>/company/</li>
+                                        <li>/company/1/</li>
+                                </ul>
+                        </div>
+                        <div class="slide">
+                                <h2>REST API - Requerimientos</h2>
+                                <table width="100%">
+                                        <tr>
+                                                <td width="50%">
+                                                        <ul>
+                                                                <li>Versionamiento</li>
+                                                                <li>Paginación</li>
+                                                                <li>Autenticación</li>
+                                                                <li>Autorización</li>
+                                                        </ul>
+                                                </td>
+                                                <td>
+                                                        <ul>
+                                                                <li>Filtro</li>
+                                                                <li>Ordenamiento</li>
+                                                                <li>Cache...</li>
+                                                        </ul>
+                                                </td>
+                                        </tr>
+                                </table>
+                                <h2 align="center">Django & Tastypie! <a href="/api/v1/?format=json">&gt;&gt;&gt;</a></h2>
+                        </div>
+                        <div class="slide" align="center">
+                                <h2>Gracias!</h2>
+                                <h2>Henry Canastero</h2>
+                                <h2><a href="http://twitter.com/tufla">@tufla</a></h2>
+                        </div>
+                </div>
+        </div>
+
+        <div id="footer">
+                <div class="container">
+                        &copy; 2013 Henry Canastero | @tufla
+                </div>
+        </div>
+        <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.presentation.js' %}"></script>
+        <script type="text/javascript">
+        $('#slides').presentation({
+          slide: '.slide',
+          pagerClass: 'nav-pager',
+          prevNextClass: 'nav-prev-next',
+          prevText: '<',
+          nextText: '>',
+          transition: 'fade'
+        });
+        </script>
+</body>
+</html>
