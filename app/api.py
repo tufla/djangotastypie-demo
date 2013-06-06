@@ -10,13 +10,6 @@ class CompanyResource(ModelResource):
 
     class Meta:
         queryset = Company.objects.all()
-        # authorization = Authorization()
-        # list_allowed_methods = ['get', 'post', 'delete']
-        # detail_allowed_methods = ['get', 'post', 'delete']
-        # filtering = {
-        #     'company': ALL_WITH_RELATIONS,
-        #     'classification': ('exact',)
-        # }
 
 
 class StockResource(ModelResource):
