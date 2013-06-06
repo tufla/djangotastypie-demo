@@ -1,0 +1,9 @@
+INSERT INTO app_company ('name','created') VALUES ('Adobe', "2013-06-04");
+INSERT INTO app_company ('name','created') VALUES ('Amazon', "2013-06-04");
+INSERT INTO app_company ('name','created') VALUES ('AOL', "2013-06-04");
+INSERT INTO app_company ('name','created') VALUES ('Apple', "2013-06-04");
+INSERT INTO app_company ('name','created') VALUES ('Dell', "2013-06-04");
+INSERT INTO app_company ('name','created') VALUES ('Facebook', "2013-06-04");
+INSERT INTO app_company ('name','created') VALUES ('Google', "2013-06-04");
+INSERT INTO app_company ('name','created') VALUES ('Microsoft', "2013-06-04");
+INSERT INTO app_company ('name','created') VALUES ('Yahoo', "2013-06-04");
