@@ -62,7 +62,6 @@ class CompanyResource(ModelResource):
 
     class Meta:
         queryset = Company.objects.all()
-        authorization = Authorization()
         filtering = {
             'name': ['exact', 'startswith']
         }
